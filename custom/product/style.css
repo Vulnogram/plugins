@@ -1,0 +1,54 @@
+.altID:before {
+    background-position: -37em 0;
+}
+.type:before {
+    background-position: -75em 0;
+}
+.hardware:before {
+    background-position: -42em 0;
+}
+.software:before {
+    background-position: -43em 0;
+}
+.os:before {
+    background-position: -40em 0;
+}
+.specification:before {
+    background-position: -41em 0;
+}
+.algorithm:before {
+    background-position: -50em 0;
+}
+.service:before {
+    background-position: -138em 0;
+}
+.download_location:before {
+    background-position: -74em 0;
+}
+.homepage:before {
+    background-position: -3em 0;
+}
+.last_change_date:before,
+.public_date:before,
+.build_date:before,
+.expiry_date:before {
+    background-position: -13em 0;
+}
+.parent:before {
+    background-position: -137em 0;
+}
+.licence:before {
+    background-position: -83em 0;
+}
+.icon:before {
+    background-position: -108em 0;
+}
+.added_relation:before {
+    background-position: -118em 0;
+}
+.removed_relation:before {
+    background-position: -116em 0;
+}
+.version_group:before, .product_group:before {
+    background-position: -72em 0;
+}

@@ -1,0 +1,50 @@
+extends ../../views/edit.pug
+include ../../views/util.pug
+
+block content
+    if doc && doc.createdAt
+        +page(doc)
+
+mixin page(doc)
+    if doc.subject
+        div.big=doc.subject
+    if doc.createdAt
+        div.flr.icn.DATE_PUBLIC
+            +hyperdate(doc, 'createdAt')
+    if doc.from
+        div
+            b.icn.owner 
+                =doc.from.text
+    div.pad.indent.small.one
+        if doc.to
+            |  to 
+            =doc.to.text
+        if doc.cc
+            |  cc  
+            =doc.cc.text
+    div.bor.pad.shd.rnd
+        if doc.html
+            | !{doc.html}
+        else
+            i
+                | Empty message body
+    if doc.attachments && doc.attachments.length > 0
+        div
+            span.icn.Attachments Attachments
+        ol
+            each att in doc.attachments
+                li
+                    a(target='_blank' href='data:' + att.contentType + ';base64,' + att.content.toString('base64'))
+                        if att.filename
+                            = att.filename
+                        else
+                            | Attachment
+                        if att.contentType
+                            |  - 
+                            = att.contentType
+                            |  - 
+                        if att.size
+                            |  
+                            = textUtil.fileSize(att.size)
+
+        

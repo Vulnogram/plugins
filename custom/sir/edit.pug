@@ -1,0 +1,7 @@
+extends ../../views/edit
+
+block customtabs
+        input.tab(name='tabs', type='radio', id='advisoryTab', value="4",)
+        label.lbl(for='advisoryTab') View
+        .wht.fil.bor.pad
+            div.render(id="render")

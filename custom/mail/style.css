@@ -1,0 +1,19 @@
+body{
+ --hig: hsl(55, 94%, 91%);
+}   
+
+
+.reply
+    .true:before {
+    background-position: -112em 0em;
+}
+
+td.atch span[title="0"] {
+    display: none;
+    opacity: 0;
+    user-select: none;
+}
+
+.Attachments[title="0"]:before {
+    display: none;
+}

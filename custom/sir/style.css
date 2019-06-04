@@ -1,0 +1,6 @@
+body{
+ --hig: hsla(160, 56%, 95%, 1);
+}
+.VENDOR:before {
+    background-position: -56em 0em;
+}
