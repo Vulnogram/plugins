@@ -1,4 +1,3 @@
-const dutil = require('../sir/dutil.js');
 module.exports = {
 conf: {
     title: 'JIRA Issues',
@@ -88,7 +87,7 @@ facet: {
     },
     Advisory: {
         path: 'SIRs.body.advisory',
-        href: 'https://kb.juniper.net/'
+        href: 'https://example.net/'
     },
     product: {
         path: 'fields.Project.name',
